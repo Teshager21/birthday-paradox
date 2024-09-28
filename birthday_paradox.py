@@ -28,5 +28,6 @@ def birthday_paradox():
             if(counter%10_000==0): print(f'{counter} simulations ran....')
             if counter>TRIAL_REPETITION: 
                 print(repetition, TRIAL_REPETITION)
+                print(f'{num} people have a {repetition/TRIAL_REPETITION*100}% chance of having a matching birthday')
                 break
 birthday_paradox()
