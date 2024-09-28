@@ -7,7 +7,7 @@ def generateRandomBirthday(num):
     end_date= date.today()
     for i in range(num):
         start_date= date.today()
-        birth_date= (start_date-timedelta(days=random.randint(0,36500))).strftime('%b %d')
+        birth_date= (start_date-timedelta(days=random.randint(0,365))).strftime('%b %d')
         birth_days.append(birth_date)
     return birth_days
 
